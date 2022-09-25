@@ -12,7 +12,7 @@ use BookStack\Http\Controllers\Api\PageExportApiController;
 use BookStack\Http\Controllers\Api\SearchApiController;
 use BookStack\Http\Controllers\Api\UserApiController;
 use Illuminate\Support\Facades\Route;
-
+use BookStack\Http\Controllers\Api\SearchPageController;
 
 /**
  * Routes for the BookStack API.
@@ -74,3 +74,5 @@ Route::get('users/{id}', [UserApiController::class, 'read']);
 Route::put('users/{id}', [UserApiController::class, 'update']);
 Route::delete('users/{id}', [UserApiController::class, 'delete']);
 
+///task
+Route::get('page_search', [SearchPageController::class, 'search']);
